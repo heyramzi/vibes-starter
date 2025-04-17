@@ -1,52 +1,78 @@
-# Project Name
+# Cursor Project Template
 
 ## Overview
-Brief description of what this project does and its purpose.
+A comprehensive starter template for projects using Cursor AI-powered IDE. This template provides structure, documentation templates, and best practices to help you build clean, maintainable code with effective AI collaboration.
 
 ## Structure
-Key directories and files in the project:
-- `/src`: Core source code
-- `/docs`: Documentation
-- `/tests`: Test files
+Key directories and files in this template:
+- `/src`: Core source code (add your application code here)
+- `/.doc`: Documentation templates and project handoff documents
+- `/tests`: Add test files here (create this directory when needed)
+- `README.md`: Project documentation (this file)
+- `.cursorrules`: Clean code principles for AI assistance
+- `PRD.md`: Product Requirements Document template
+- `changelog.md`: Template for tracking project changes
 
-## Technologies
-- Main language: 
-- Frameworks:
-- Key libraries:
+## Getting Started
 
-## Setup
-Installation and configuration steps.
+1. Replace this README content with your actual project details
+2. Add your source code to the `/src` directory
+3. Update the PRD.md with your project requirements
+4. Use the feature-handoff template for collaboration
+5. Track changes in the changelog.md file
 
-## Usage
-How to use the project with simple examples.
+## Using Cursor AI Effectively
 
-## Development
-Guidelines for contributing to the project.
+### Feature Handoff
+Use the `.doc/handoff/feature-handoff.md` template when:
+- Switching between team members
+- Asking Cursor AI to analyze your codebase
+- Documenting components for future reference
 
-## Architecture
-Brief description of the system design.
+### Clean Code Principles
+The `.cursorrules` file contains best practices for:
+- Naming conventions
+- Code structure
+- Error handling
+- Performance optimization
 
+### Product Requirements
+Use the `PRD.md` template to:
+- Define project scope
+- Document user stories
+- Set technical requirements
+- Plan implementation phases
 
-This template is intended at helping users use Cursor
+### Feature Todo Documents
+The `.doc/todo/example-feature.md` serves as a template for creating structured task lists:
+- Copy this template when starting new features
+- Break down complex features into manageable tasks
+- Track dependencies and implementation notes
+- Use checkboxes to monitor progress
 
-You can remove this section and update the readme with your actual project details
+#### Converting Rough Requirements to Structured Todos
 
-# How to use this project:
+When you have unstructured or poorly defined requirements, use this prompt with Cursor AI to generate a structured todo document:
 
-## Files Purpose
+```
+Transform these rough requirements into a structured todo document following the format in .doc/todo/example-feature.md:
 
-This project contains several key files and directories:
+[Paste your rough requirements here]
 
-* **README.md**: Project documentation with setup instructions and overview
-* **.doc/handoff/feature-handoff.md**: Template for creating structured handoff documents between team members
-* **changelog.md**: Record of all notable changes to the project organized by version
-* **PRD.md**: Product Requirements Document template for defining project specifications
-* **.cursorrules.md**: Clean code principles and best practices for development
-* **/src**: Directory containing the core source code of the application
+For the todo document:
+1. Create a clear feature title
+2. Add a concise overview of the feature's purpose
+3. Break down implementation into hierarchical tasks with checkboxes
+4. List all technical dependencies
+5. Include relevant notes about implementation challenges or considerations
+6. Make sure the tasks follow a logical implementation order
+7. Keep each task focused and specific
+```
 
-These files provide structure and documentation to help maintain code quality and facilitate collaboration.
+This approach helps convert vague requirements like "We need user login" into comprehensive, actionable task lists organized by implementation phase.
 
-## System Prompt Template
+## Recommended System Prompt for Code Analysis
+
 ```
 You are a code analysis assistant tasked with creating a structured handoff document. Analyze the provided codebase and generate a clear feature handoff document following this exact structure:
 
